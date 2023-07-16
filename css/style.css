@@ -1,0 +1,142 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:"popins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  width: auto;
+  height: auto;
+}
+.header{
+  height: 14%;
+  width: 100%;
+  padding: 0 8%;
+  background-color: #fff;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo{
+  width: 140px;
+}
+.lists{
+  padding: 28px 0;
+}
+.lists li{
+  display: inline;
+  margin: 0 15px;
+}
+
+.lists li a {
+text-decoration: none;
+color: #010101;
+padding: 5px 0;
+position: relative;
+}
+
+.lists li a::after{
+  color: "";
+  background-color: blue;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+
+}
+
+.lists li a:hover:after{
+  width: 100px;
+}
+
+.services{
+  width: 100%;
+  height: 25%;
+}
+
+.services p{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 18px;
+}
+.box{
+  width: 50%;
+  height: 900px;
+  align-items: center;
+  /* margin-left: 320px;
+  margin-right: 200px; */
+  margin-top: 50px;
+  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin-left: 100px;
+  margin-top: 20px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+footer{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img{
+  width: 200px;
+  min-height: 200px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
